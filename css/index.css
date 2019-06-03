@@ -67,27 +67,26 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	max-width: 1000px;
 	flex-wrap: wrap;
-	height: auto;
 	/* TB LR */
 	margin: 0 auto;
   }
   
-/* Tablet */
+/* Tablet
 @media (max-width: 800px) {
     .container {
-        max-width: 800px;
         display: flex;
         margin: 0 auto;
     }
   }
 
 /* Phone */
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     .container {
-        max-width: 500px;
+        margin: 0 auto;
         display: flex;
+        width: 100%;
     }
-  }
+  } */
 
   /******************* HEADER *******************/
   
@@ -157,14 +156,15 @@ h1, h2, h3, h4, h5 {
     }
   }
 
-  /* phone GOTTA GET THE BORDER TO FILL THE SCREEN HERE***************************************/
+  /* phone */
   @media (max-width: 500px) {
     header nav a {
         margin: 0px;
-        padding: 12px;
+        padding: 15px 0px;
         border-bottom: 1px solid gray;
         width: 100%;
         text-align: center;
+        font-size: 18px;
     }
     header nav a:first-child {
         border-top: 1px solid gray;
@@ -249,6 +249,14 @@ h1, h2, h3, h4, h5 {
     .upper-container {
       display: flex;
       justify-content: center;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .upper-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
   }
 
@@ -359,7 +367,7 @@ h1, h2, h3, h4, h5 {
   .main-content-container .top-content {
 	display: flex;
     justify-content: flex-start;
-    width: 98%;
+    width: 100%;
   }
 
   @media (max-width: 500px) {
@@ -391,14 +399,30 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	align-items: center;
     justify-content: stretch;
-    width: 99%;
+    width: 100%;
     height: auto;
   }
   
   .main-content-container .bottom-content {
 	margin-top: 37px;
 	display: flex;
-	justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    .main-content-container .bottom-content {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .main-content-container .bottom-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
   }
   
   .main-content-container .bottom-content .text-content {
@@ -410,6 +434,13 @@ h1, h2, h3, h4, h5 {
   
   .main-content-container .bottom-content .text-content:last-child {
 	margin-right: 0;
+  }
+
+  @media (max-width: 500px) {
+    .main-content-container .bottom-content .text-content {
+        width: 100%;
+        margin-bottom: 50px;
+    }
   }
   
   .lower-content-container {
@@ -430,7 +461,6 @@ h1, h2, h3, h4, h5 {
 	padding-top: 25px;
   }
 
-
   .lower-content-container .lower-content-item li {
 	list-style-type: square;
 	list-style-position: inside;
@@ -445,7 +475,15 @@ h1, h2, h3, h4, h5 {
 	flex-wrap: wrap;
 	border-top: 2px solid black;
     padding: 39px 10px 0px 0px;
-    width: 99%
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    .contact {
+        margin-top: 0px;
+        width: 100%;
+        padding: 39px 0px 0px;
+    }
   }
   
   .contact p {
@@ -457,7 +495,8 @@ h1, h2, h3, h4, h5 {
 	justify-content: center;
 	margin: 32px 0;
 	text-align: center;
-	font-size: 14px;
+    font-size: 14px;
+    width: 100%;
   }
 
   footer p {
